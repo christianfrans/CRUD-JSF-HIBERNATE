@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Update</title>
+    </h:head>
+    <h:body style="background: url(https://w.wallhaven.cc/full/83/wallhaven-832852.jpg)">
+        <br></br>
+        <div class="container alert" style="background: rgba(0,0,0,0.15);">
+        <h:form id="update">
+            <h:panelGrid columns="2">
+                ID : <h:inputText value="#{users.id}"/><br></br>
+                <h:commandButton value="Show User Details" action="#{users.getbyid()}"/><br></br>
+                <h:inputText value="#{users.firstName}"/><br></br>
+                <h:inputText value="#{users.lastName}"/><br></br>
+                <h:inputText value="#{users.address}"/><br></br>
+                <h:inputText value="#{users.email}"/><br></br>
+                <h:inputText value="#{users.phone}"/><br></br>
+                <h:inputText value="#{users.username}"/><br></br>
+                <h:inputText value="#{users.password}"/><br></br>
+                <h:commandButton value="Update" action="#{users.update}"/>
+            </h:panelGrid>
+        </h:form>
+        </div>
+    </h:body>
+</html>
